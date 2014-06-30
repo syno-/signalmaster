@@ -79,6 +79,7 @@ Signalmaster.prototype.main = function(io) {
         }
     
         function join(name, cb) {
+            name = name + '+simplewebrtc';
             // sanity check
             if (typeof name !== 'string') return;
             // leave any existing rooms
